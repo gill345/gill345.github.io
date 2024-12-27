@@ -3,15 +3,46 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranbir Gill</title>
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
-    <link rel="stylesheet" type="text/css" href="https://gill345.github.io/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+   <!-- <link rel="stylesheet" type="text/css" href="https://gill345.github.io/styles.css"> -->
 </head>
 
 <header class="TableOfContents">
-    <img class="ranbiricon" src="images/iconimage.png" alt="icon"> <h1 id="name">Ranbir Gill:</h1>
+    <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-center font-mono">
+
+        <div id="installation" class="columns-2xl shadow-2xl border-4 border-pink-500 bg-gray-100 bg-opacity-50 p-6 rounded-lg hover:bg-opacity-90">
+          <h2 class="text-2xl font-bold">How I Installed The Framework</h2>
+          <br>
+          <p class="text-base">To use the framework, I simply added a CDN as opposed to installing it as a plugin which was recommended for production. From there I used the offical docs and examples given to build my site.</p>
+          </div>
+        
+        <div class="columns-2xl shadow-2xl border-4 border-pink-500 bg-gray-100 bg-opacity-50 p-6 rounded-lg hover:bg-opacity-90">
+          <h2 class="text-2xl font-bold">How I Built The Page</h2>
+          <br>
+          <p class="text-base">To build the page, I used Tailwind to design various aspects, including the animations and the responsive design. Apart from that the rest was done using HTML and a little bit of Javascript for the navbar.</p>
+          </div>
+        
+        </div>
+    <img class="" src="images/iconimage.png" alt="icon"> <h1 id="name">Ranbir Gill:</h1>
+    <a class="red">About Me</a>
+    <a></a>
     <nav>
 
     </nav>
