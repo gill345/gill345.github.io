@@ -12,7 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Doto:wght@100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Permanent+Marker&display=swap"
         rel="stylesheet">
     <script>
         tailwind.config = {
@@ -29,10 +30,13 @@
                         serif: ['Merriweather', 'serif'],
                         bitter: ['Bitter', 'serif'],
                         doto: ['Doto', 'serif'],
+                        comorant: ['Cormorant Garamond', 'serif'],
+                        marker: ['Permanent Marker', 'serif'],
                     },
                     colors: {
                         lgrey: '#d4d4d4',
                         dgrey: '#a5a5a5',
+                        purple: '#6552D0',
                     },
                     spacing: {
                         '128': '32rem',
@@ -43,6 +47,9 @@
                     },
                     animation: {
                         gradient: 'gradientAnimation 5s ease infinite',
+                        wave: 'wave 2s linear infinite',
+                        fadein: 'fadeIn 2s ease-in',
+                        slowfade: 'fadeIn 3s ease-in',
                     },
                     keyframes: {
                         gradientAnimation: {
@@ -50,7 +57,17 @@
                             '50%': { 'background-position': '100% 50%' },
                             '100%': { 'background-position': '0% 50%' },
                         },
+                        wave: {
+                            '0%, 100%': { transform: 'rotate(0deg)' },
+                            '50%': { transform: 'rotate(15deg)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
                     },
+
+
                 },
             },
         }
@@ -70,9 +87,10 @@
 </head>
 
 
-<body class="flex flex-col items-center justify-center font-doto font-bold h-screen w-full bg-gradient-to-r from-green-500 via-turquoise-500 to-blue-500 bg-[length:200%_200%] animate-gradient">
+<body
+    class="flex flex-col items-center justify-center font-doto font-bold h-screen w-full bg-gradient-to-r from-lgrey via-dgrey to-slate-500 bg-[length:200%_200%] animate-gradient">
 
-<!--
+    <!--
     <nav class="fixed left-0 w-full bg-lgrey top-0 z-50">
         <div id="home"
             class="max-w-screen-xl md:flex-nowrap flex flex-wrap gap-4 items-center justify-between mx-auto pb-6 pt-6 pl-3 pr-3">
@@ -118,11 +136,30 @@
         </div>
     </nav>
 -->
-<div class="pattern-dots-md text-pink-500 max-w-[10%] overflow-visible pr-8">
-<h1 class="text-5xl text-black pl-6 flex"> Hi I'm Ranbir Gill </h1>
 
-<h1 class="text-5xl text-black pl-6 flex"> Welcome To My Page!</h1>
-</div>
+    <h1 class="text-5xl text-black pl-6 flex text-center animate-fadein"> Hi I'm Ranbir Gill </h1>
+
+    <h1 class="text-5xl text-black pl-6 flex text-center animate-fadein"> Welcome To My Page!</h1>
+
+
+    <br>
+    <div class="flex animate-slowfade">
+        <a href="https://github.com/gill345"><img class="hover:animate-bounce" width="60" height="60"
+                src="https://img.icons8.com/dotty/80/github.png" alt="github" /></a>
+        <a href="www.linkedin.com/in/ranbir-gill"><img class="hover:animate-bounce" width="60" height="60"
+                src="https://img.icons8.com/dotty/80/linkedin.png" alt="linkedin" /></a>
+        <a href="mailto:ranbir.gill@torontomu.ca"> <img class="hover:animate-bounce" width="60" height="60" src="https://img.icons8.com/carbon-copy/100/gmail-new.png" alt="gmail-new"/></a>
+    </div>
+
+    <br>
+    <div class="flex">
+        <a href="https://gill345.github.io/aboutpage.html" class="text-xl font-comorant font-light hover:text-purple">About Me</a>
+        <h1 class="text-2xl">  |  </h1>
+        <a href="https://gill345.github.io/skillspage.html" class="text-xl font-comorant font-light hover:text-purple">My Skills/Languages</a>
+        <h1 class="text-2xl">  |  </h1>
+        <a href="https://gill345.github.io/projectspage.html" class="text-xl font-comorant font-light hover:text-purple">Projects</a>
+        
+    </div>
 </body>
 
 </html>
