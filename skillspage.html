@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -86,85 +85,211 @@
 
 
 
-    <div class="flex flex-col min-h-screen">
-<header>
+<div class="flex flex-col min-h-screen">
+    <header>
 
-    <nav class="left-0 w-full bg-lgrey top-0 z-50">
-        <div id="home"
-            class="max-w-screen-xl md:flex-nowrap flex flex-wrap gap-4 items-center justify-between mx-auto pb-6 pt-6 pl-3 pr-3">
-            <div class="flex">
-                <span class="self-center text-4xl font-marker font-bold whitespace-nowrap text--500 bg-color">
-                    <h1 class="opacity-100">Ranbir Gill<h1>
-                </span>
+        <nav class="left-0 w-full bg-lgrey top-0 z-50">
+            <div id="home"
+                class="max-w-screen-xl md:flex-nowrap flex flex-wrap gap-4 items-center justify-between mx-auto pb-6 pt-6 pl-3 pr-3">
+                <div class="flex">
+                    <span class="self-center text-4xl font-marker font-bold whitespace-nowrap text--500 bg-color">
+                        <h1 class="opacity-100">Ranbir Gill<h1>
+                    </span>
+                </div>
+
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto font-comorant text-xl gap-4" id="navbar-default">
+                    <ul
+                        class="font-medium opacity-100 md:mx-0 md:space-y-0 mx-4 space-y-4 flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                        <li>
+                            <a href="https://gill345.github.io."
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:hover:text-blue md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/aboutpage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue  md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
+                                aria-current="page">About Me</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/skillspage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Skills</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/projectspage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body class="bg-dgrey">
+        <h1 class="pt-16 text-center text-3xl font-comorant font-bold">Languages/Frameworks I Am Familiar With</h1>
+        <div class="pt-8 pb-8 grid grid-cols-3 md:grid-cols-5 gap-1 auto-cols-max text-center align-middle">
+
+            <div
+                class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/48/python--v1.png"
+                    alt="python--v1" />
+                <p>Python</p>
             </div>
 
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto font-comorant text-xl gap-4" id="navbar-default">
-                <ul
-                    class="font-medium opacity-100 md:mx-0 md:space-y-0 mx-4 space-y-4 flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                    <li>
-                        <a href="https://gill345.github.io."
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:hover:text-blue md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/aboutpage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue  md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
-                            aria-current="page">About Me</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/skillspage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Skills</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/projectspage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Projects</a>
-                    </li>
-                </ul>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                <p>Java</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
+                <p>C/C++</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                <p>HTML</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/css3.png" alt="css3"/>
+                <p>CSS</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/bootstrap--v2.png" alt="bootstrap--v2"/>
+                <p>BootStrap</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/javascript--v1.png" alt="javascript--v1"/>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="50" height="50" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/60/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo.png" alt="external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo"/>
+                <p>jQuery</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90"> 
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/officel/100/php-logo.png" alt="php-logo"/>
+                <p>PHP</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/3d-fluency/60/database.png" alt="database"/>
+                <p>SQL/MYSQL</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/ruby-programming-language.png" alt="ruby-programming-language"/>
+                <p>Ruby</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="100" height="100" src="images/perl.png">
+                <p>Perl</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/external-others-iconmarket/60/external-xml-file-types-others-iconmarket.png" alt="external-xml-file-types-others-iconmarket"/>
+                <p>XML</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/officel/60/json.png" alt="json"/>
+                <p>Json</p>
+            </div>
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/lisp.png" alt="lisp"/>
+                <p>Lisp</p>
             </div>
         </div>
-    </nav>
-</header>
 
-<body>
-    <h1 class="pt-32 text-center text-2xl font-comorant font-bold">Languages/Frameworks I Am Familiar With</h1>
-    <div class=" pt-32 grid grid-cols-3 md:grid-cols-5 auto-cols-max text-center align-middle">
-        
-        <div class="border-2 border-black p-9 font-comorant text-lg">
-            <img width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
-            <p>Python</p>
+        <h1 class="pt-8 text-center text-3xl font-comorant font-bold">Software Tools/Platforms I Can Use</h1>
+        <div class="pt-8 pb-8 grid grid-cols-2 md:grid-cols-5 gap-1 auto-cols-max text-center align-middle">
+
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/fluency/60/azure-1.png" alt="azure-1"/>
+                <p>Microsoft Azure</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img  class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/linux--v1.png" alt="linux--v1"/>
+                <p>Linux/Unix</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img  class="mx-auto" width="60" height="60" src="https://img.icons8.com/office/60/java-eclipse.png" alt="java-eclipse"/>
+                <p>Eclipse</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/intellij-idea.png" alt="intellij-idea"/>
+                <p>Intellej</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/pycharm--v2.png" alt="pycharm--v2"/>
+                <p>PyCharm</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/fluency/60/spyder-ide.png" alt="spyder-ide"/>
+                <p>Spyder</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/lamp-of-alladin.png" alt="lamp-of-alladin"/>
+                <p>Geany</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/office/60/microsoft-365.png" alt="microsoft-365"/>
+                <p>Microsoft Office</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/emacs.png" alt="emacs"/>
+                <p>Emacs</p>
+            </div>
         </div>
-        
-        <p>Java</p>
-        <p>C/C++</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>BootStrap</p>
-        <p>JavaScript</p>
-        <p>jQuery</p>
-        <p>PHP</p>
-        <p>SQL/MYSQL</p>
-        <p>Ruby</p>
-        <p>Perl</p>
-        <p>XML</p>
-        <p>Json</p>
-        <p>Lisp</p>
-    </div>
-    <h1>Software Tools I Can Use</h1>
-    
-    <div>
-        
-    </div>
-</body>
+
+        <h1 class="pt-8 text-center text-3xl font-comorant font-bold">Soft Skills</h1>
+        <div class="pt-8 pb-8 grid grid-cols-2 md:grid-cols-3 gap-1 auto-cols-max text-center align-middle">
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/onboarding.png" alt="onboarding"/>
+                <p>Team Work</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/officel/60/group-task.png" alt="group-task"/>
+                <p>Communication</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/ios-filled/60/creativity-and-resourcefulness.png" alt="creativity-and-resourcefulness"/>
+                <p>Problem Solving</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/ios-filled/60/experience-skill.png" alt="experience-skill"/>
+                <p>Efficiency</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/color/60/broom.png" alt="broom"/>
+                <p>Organization</p>
+            </div>
+            <div class="border-2 bg-lgrey border-dgrey rounded-lg p-9 font-comorant text-lg shadow-2xl transform transition-transform duration-200 hover:scale-90">
+                <img class="mx-auto" width="60" height="60" src="https://img.icons8.com/glyph-neue/60/meeting.png" alt="meeting"/>
+                <p>Customer Service</p>
+            </div>
+
+        </div>
+    </body>
 
 </div>
 <footer class="inset-x-0 bottom-0 bg-lgrey w-full font-comorant z-0">
@@ -172,5 +297,6 @@
     <h1 class="text-xl">Email: ranbir.gill@torontomu.ca </h1>
     <h1 class="text-lg">Please reach out regarding any questions/concerns</h1>
 </footer>
-    </div>
+</div>
+
 </html>
