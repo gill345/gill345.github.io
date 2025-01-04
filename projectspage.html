@@ -85,86 +85,98 @@
 
 
 
-    <div class="flex flex-col min-h-screen">
-<header>
+<div class="flex flex-col min-h-screen">
+    <header>
 
-    <nav class="left-0 w-full bg-lgrey top-0 z-50">
-        <div id="home"
-            class="max-w-screen-xl md:flex-nowrap flex flex-wrap gap-4 items-center justify-between mx-auto pb-6 pt-6 pl-3 pr-3">
-            <div class="flex">
-                <span class="self-center text-4xl font-marker font-bold whitespace-nowrap text--500 bg-color">
-                    <h1 class="opacity-100">Ranbir Gill<h1>
-                </span>
+        <nav class="left-0 w-full bg-lgrey top-0 z-50">
+            <div id="home"
+                class="max-w-screen-xl md:flex-nowrap flex flex-wrap gap-4 items-center justify-between mx-auto pb-6 pt-6 pl-3 pr-3">
+                <div class="flex">
+                    <span class="self-center text-4xl font-marker font-bold whitespace-nowrap text--500 bg-color">
+                        <h1 class="opacity-100">Ranbir Gill<h1>
+                    </span>
+                </div>
+
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto font-comorant text-xl gap-4" id="navbar-default">
+                    <ul
+                        class="font-medium opacity-100 md:mx-0 md:space-y-0 mx-4 space-y-4 flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                        <li>
+                            <a href="https://gill345.github.io."
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:hover:text-blue md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/aboutpage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue  md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
+                                aria-current="page">About Me</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/skillspage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Skills</a>
+                        </li>
+                        <li>
+                            <a href="https://gill345.github.io/projectspage.html"
+                                class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Projects</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto font-comorant text-xl gap-4" id="navbar-default">
-                <ul
-                    class="font-medium opacity-100 md:mx-0 md:space-y-0 mx-4 space-y-4 flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                    <li>
-                        <a href="https://gill345.github.io."
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:hover:text-blue md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/aboutpage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue  md:bg-transparent md:p-0 text-black-500 md:dark:hover:text-blue"
-                            aria-current="page">About Me</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/skillspage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Skills</a>
-                    </li>
-                    <li>
-                        <a href="https://gill345.github.io/projectspage.html"
-                            class="block border-2 md:border-0 border-black py-2 text-md px-3 text-black-500 rounded hover:bg-gray-100 text-center md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 md:dark:hover:text-blue md:dark:hover:bg-transparent">Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+    <body class="bg-dgrey text-center font-comoront">
 
-<body class="bg-dgrey text-center font-comoront">
+        <h1 class="pt-6 text-4xl font-comorant underline font-bold animate-fadein">Projects</h1>
 
-    <h1 class="pt-6 text-4xl font-comorant underline font-bold animate-fadein">Projects</h1>
+        <section class="text-left font-comorant">
+            <h1 class="pt-8 text-2xl font-bold">MonkeyBot</h1>
+            <img class="hover:scale-125 transition-all duration-300 w-80 h-80 pt-6 pb-6" src="images/discord.png"
+                alt="pending">
+            <p class="text-lg">MonkeyBot was a Python Discord Bot that I initially created for learning purposes but
+                then decided to add it to my group server for testing purposes. At the start it had simple commands such
+                as response commands and some minigames like rock paper scisors and guess the number. As I tested and
+                learned new features I added more functionality such as the music player ability. Apart from that it's
+                still a simple bot with more plans in the future.</p>
+        </section>
 
-    <section class="text-left font-comorant">
-        <h1 class="pt-8 text-2xl font-bold">MonkeyBot</h1>
-        <img class="" src="" alt="pending">
-        <p class="text-lg">MonkeyBot was a Python Discord Bot that I initially created for learning purposes but then decided to add it to my group server for testing purposes. At the start it had simple commands such as response commands and some minigames like rock paper scisors and guess the number. As I tested and learned new features I added more functionality such as the music player ability. Apart from that it's still a simple bot with more plans in the future.</p>
-    </section>
+        <section class="text-left font-comorant">
+            <h1 class="pt-8 text-2xl font-bold">Quick Weather Site</h1>
+            <img class="hover:scale-125 transition-all duration-300 w-80 h-80 pt-6 pb-6" src="images/weather.png"
+                alt="pending">
+            <p class="text-lg">Quick Weather Site was a site that I created as an additional source of weather info when
+                needed. Often I would check the weather on my phone and then look outside and see a completely different
+                scene. As such I decided to make a PHP site that would allow me to quickly search any city and gets its
+                current weather from OpenWeatherSource. Additionally it would save that city as a cookie so I do not
+                have to re-enter the city name upon search. </p>
+        </section>
 
-    <section class="text-left font-comorant">
-        <h1 class="pt-8 text-2xl font-bold">Quick Weather Site</h1>
-        <img class="" src="" alt="pending">
-        <p class="text-lg">Quick Weather Site was a site that I created as an additional source of weather info when needed. Often I would check the weather on my phone and then look outside and see a completely different scene. As such I decided to make a PHP site that would allow me to quickly search any city and gets its current weather from OpenWeatherSource. Additionally it would save that city as a cookie so I do not have to re-enter the city name upon search. </p>
-    </section>
+        <section class="text-left font-comorant pb-6">
+            <h1 class="pt-8 text-2xl font-bold">UberUI</h1>
+            <img class="hover:scale-125 transition-all duration-300 w-80 h-80 pt-6 pb-6" src="images/uberui.png"
+                alt="pending">
+            <p class="text-lg">UberUI was a Java project consisting of 10+ classes which allowed multiple riders and
+                drivers. Additionally, various algorithms were used to replicate Ubers system in a console format.</p>
+        </section>
 
-    <section class="text-left font-comorant pb-6">
-        <h1 class="pt-8 text-2xl font-bold">UberUI</h1>
-        <img class="" src="" alt="pending">
-        <p class="text-lg">UberUI was a Java project consisting of 10+ classes which allowed multiple riders and drivers. Additionally, various algorithms were used to replicate Ubers system in a console format.</p>
-    </section>
-
-    <section class="text-left font-comorant pb-6">
-        <h1 class="pt-8 text-2xl font-bold">Work in Progress</h1>
-        <img class="" src="" alt="pending">
-        <p class="text-lg">Work in Progress</p>
-    </section>
+        <section class="text-left font-comorant pb-6">
+            <h1 class="pt-8 text-2xl font-bold">Work in Progress</h1>
+            <img class="" src="" alt="pending">
+            <p class="text-lg">Work in Progress</p>
+        </section>
 
 
 
-</body>
+    </body>
 </div>
 <footer class="inset-x-0 bottom-0 bg-lgrey w-full font-comorant z-0 text-center">
     <h1 class="text-2xl">Made By: Ranbir Gill</h1>
@@ -172,5 +184,6 @@
         <h1 class="text-xl text-indigo-500 hover:text-blue">ranbir.gill@torontomu.ca</h1>
     </a>
 </footer>
-    </div>
+</div>
+
 </html>
