@@ -49,7 +49,6 @@
                         wave: 'wave 2s linear infinite',
                         fadein: 'fadeIn 2s ease-in',
                         slowfade: 'fadeIn 3s ease-in',
-                        bounce: 'bounce 1s infinite',
                     },
                     keyframes: {
                         gradientAnimation: {
@@ -65,11 +64,6 @@
                             '0%': { opacity: '0' },
                             '100%': { opacity: '1' },
                         },
-
-                        bounce: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
                     },
                 },
             },
@@ -84,14 +78,6 @@
                 navbar.classList.toggle('hidden');
             });
         });
-
-        document.getElementById('arrowButton').addEventListener('click', function() {
-            const arrowIcon = document.getElementById('arrowIcon');
-            const buttonText = document.getElementById('buttonText');
-
-            arrowIcon.classList.toggle('opacity-0');
-            buttonText.classList.toggle('opacity-0');
-});
     </script>
 
     <!-- <link rel="stylesheet" type="text/css" href="https://gill345.github.io/styles.css"> -->
@@ -157,18 +143,13 @@
             <h1 class="text-2xl font-bold underline italic">MonkeyBot</h1>
             <img class="hover:scale-125 transition-all duration-300 w-96 h-96 pt-6 pb-6" src="images/discord.png"
                 alt="pending">
-            <button id="arrowButton" class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                    <svg id="arrowIcon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-            <p class="text-lg text-center" id="buttonText">MonkeyBot was a Python Discord Bot that I initially created for learning
+            <p class="text-lg text-center">MonkeyBot was a Python Discord Bot that I initially created for learning
                 purposes but
                 then decided to add it to my group server for testing purposes. At the start it had simple commands such
                 as response commands and some minigames like rock paper scisors and guess the number. As I tested and
                 learned new features I added more functionality such as the music player ability that uses the YT-DLP
                 library. Apart from that it's
                 still a simple bot with more plans in the future.</p>
-            </button>
         </section>
         <hr class="h-px my-8 border-0 bg-gray-800">
         <section class="grid grid-cols-1 justify-items-center text-left font-comorant pr-3 pl-3 pt-8">
@@ -177,11 +158,7 @@
                 <source src="images/bicycles.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <button id="arrowButton" class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                <svg id="arrowIcon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-            <p class="text-lg text-center" id="buttonText">Bike Rental Site was a site that I created in which users can sign up, view
+            <p class="text-lg text-center">Bike Rental Site was a site that I created in which users can sign up, view
                 bikes
                 available for rent, rent out a bike, and post their own bike up for rent.
                 To store bike and rental information I decided to utilize a MySQL database to store this data and PHP
@@ -189,7 +166,6 @@
                 input and data processing. I plan to add more functionality in the future, such as integrating payment
                 systems.
             </p>
-        </button>
         </section>
 
         <hr class="h-px my-8 border-0 bg-gray-800">
@@ -198,11 +174,7 @@
             <a class="text-2xl text-sky-700 font-bold" href="http://ranbirweather.wuaze.com/">Link to Site</a>
             <img class="hover:scale-125 transition-all duration-300 w-96 h-96 pt-6 pb-6" src="images/weather.png"
                 alt="pending">
-                <button id="arrowButton" class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                    <svg id="arrowIcon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-            <p class="text-lg text-center" id="buttonText">Quick Weather Site was a site that I created as an additional source of
+            <p class="text-lg text-center">Quick Weather Site was a site that I created as an additional source of
                 weather info when
                 needed. Often I would check the weather on my phone and then look outside and see a completely different
                 scene. As such I decided to make a PHP site that would allow me to quickly search any city and gets its
@@ -211,32 +183,26 @@
                 image
                 depending on local weather conditions.
             </p>
-        </button>
         </section>
         <hr class="h-px my-8 border-0 bg-gray-800">
         <section class="grid grid-cols-1 justify-items-center font-comorant pb-6 pr-3 pl-3 pt-8">
             <h1 class="text-2xl font-bold underline italic">UberUI</h1>
             <img class="hover:scale-125 transition-all duration-300 w-96 h-96 pt-6 pb-6" src="images/uberui.png"
                 alt="pending">
-            <button id="arrowButton" class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                    <svg id="arrowIcon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-            <p class="text-lg text-center" id="buttonText">UberUI was a Java project consisting of 10+ classes which allowed multiple
+            <p class="text-lg text-center">UberUI was a Java project consisting of 10+ classes which allowed multiple
                 riders and drivers. Additionally, various algorithms are implemented alongside multiple data structures
                 such as linked-lists and queues to replicate Ubers system in a console format. The program has been
                 tested for
                 hundereds of various scenarios.
             </p>
-            </button>
         </section>
-        <hr class="h-px my-8 border-0 bg-gray-800">
 
         <!--
+        <hr class="h-px my-8 border-0 bg-gray-800">
         <section class="grid grid-cols-1 justify-items-center font-comorant pb-6 pr-3 pl-3">
             <h1 class="pt-8 text-2xl font-bold italics underline">Work in Progress</h1>
             <img class="" src="" alt="pending">
-            <p class="text-lg text-center">Currently working on a variety of projects</p>
+            <p class="text-lg text-center">Work in Progress</p>
         </section>
 -->
 
