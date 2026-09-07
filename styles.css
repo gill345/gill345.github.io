@@ -25,6 +25,9 @@ body {
     line-height: 1.7;
 }
 
+body, body p, body li, body span, body a, body button { font-family: 'DM Sans', sans-serif !important; }
+body h1, body h2, body h3 { font-family: 'Fraunces', serif !important; }
+
 a { color: inherit; text-decoration: none; }
 a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 
@@ -36,6 +39,8 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px soli
     z-index: 10;
     backdrop-filter: blur(14px);
 }
+.site-header nav, .site-header nav a, .site-header nav button, .site-header nav li { font-family: 'DM Sans', sans-serif !important; }
+.site-header nav h1, .site-header .brand { font-family: 'Fraunces', serif !important; }
 .site-nav {
     align-items: center;
     display: flex;
