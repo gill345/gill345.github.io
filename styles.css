@@ -19,8 +19,6 @@ body {
     margin: 0;
     min-width: 320px;
     background-color: var(--paper) !important;
-    background-image: linear-gradient(rgba(116, 141, 146, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(116, 141, 146, .045) 1px, transparent 1px) !important;
-    background-size: 48px 48px;
     color: var(--ink) !important;
     font-family: 'DM Sans', sans-serif !important;
     font-weight: 400 !important;
@@ -123,7 +121,7 @@ body > .flex.flex-col > header nav li a:hover { background: transparent !importa
 body > .flex.flex-col > header h1 { color: var(--ink) !important; font-family: 'Fraunces', serif !important; font-size: 1.45rem !important; letter-spacing: -.04em; }
 body > .flex.flex-col > header button { border: 1px solid var(--line); color: var(--ink); }
 body > .flex.flex-col > header button:hover { background: var(--surface); }
-body > .flex.flex-col > body { background-color: transparent !important; background-image: linear-gradient(rgba(116, 141, 146, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(116, 141, 146, .045) 1px, transparent 1px) !important; background-size: 48px 48px !important; display: block; flex: 1; padding: 82px 28px 110px; }
+body > .flex.flex-col > body { background-color: transparent !important; display: block; flex: 1; padding: 82px 28px 110px; }
 body > .flex.flex-col > body > h1 { color: var(--ink); font-size: clamp(2.6rem, 6vw, 4.8rem); line-height: 1; margin: 0 auto 22px; max-width: 900px; padding: 0; text-decoration: none; }
 body > .flex.flex-col > body > p { color: var(--muted); font-size: 1.08rem; line-height: 1.7; margin: 0 auto 48px; max-width: 720px; padding: 0; }
 body > .flex.flex-col > body > section { color: var(--muted); font-size: 1.05rem; line-height: 1.8; margin: 0 auto; max-width: 780px; padding: 0 0 30px; }
@@ -159,6 +157,16 @@ body > .flex.flex-col > div.grid + h1 { color: var(--ink); font-size: clamp(2rem
 body > .flex.flex-col > header .site-nav { max-width: 1180px; min-height: 82px; padding: 0 28px; }
 body > .flex.flex-col > header .site-nav > .nav-links { align-items: center; display: flex; gap: 28px; margin: 0; max-width: none; min-height: 0; padding: 0; }
 
+body > header.site-header > nav { background: transparent !important; position: static !important; }
+body > header.site-header > nav > div { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1180px; min-height: 82px; padding: 0 28px !important; }
+body > header.site-header > nav > div > div:first-child { display: block; }
+body > header.site-header > nav > div > div:first-child h1 { color: var(--ink) !important; font-family: 'Fraunces', serif !important; font-size: 1.45rem !important; letter-spacing: -.035em; margin: 0 !important; }
+body > header.site-header > nav > div > div:last-child { display: block; width: auto; }
+body > header.site-header > nav ul { align-items: center; display: flex; gap: 28px; margin: 0 !important; padding: 0 !important; }
+body > header.site-header > nav li { list-style: none; }
+body > header.site-header > nav li a { border: 0 !important; color: var(--muted) !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .06em; padding: 6px 0 !important; text-transform: uppercase; }
+body > header.site-header > nav li a:hover, body > header.site-header > nav li a[aria-current='page'] { background: transparent !important; color: var(--coral-dark) !important; }
+
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 725px) {
     .site-nav, body > .flex.flex-col > header nav > div { min-height: 70px; padding: 0 20px !important; }
@@ -173,6 +181,9 @@ body > .flex.flex-col > header .site-nav > .nav-links { align-items: center; dis
     .site-nav > .nav-links.is-open, body > .flex.flex-col > header .site-nav > .nav-links.is-open { display: flex; }
     .site-nav > .nav-links a { padding: 10px 0 !important; width: 100%; }
     body > .flex.flex-col > header .site-nav { min-height: 70px; padding: 0 20px; }
+    body > header.site-header > nav > div { min-height: 70px; padding: 0 20px !important; }
+    body > header.site-header > nav ul { gap: 13px; }
+    body > header.site-header > nav li a { font-size: .63rem !important; letter-spacing: .03em; }
     .experience-item { gap: 18px; grid-template-columns: 1fr; padding: 32px 0; }
     .experience-content { padding-left: 20px; }
     body > .flex.flex-col > h1 { padding-left: 20px; padding-right: 20px; }
