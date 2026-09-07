@@ -178,7 +178,7 @@ body > header.site-header > nav li a:hover, body > header.site-header > nav li a
 .site-header > nav > div > div:first-child h1 { color: var(--ink) !important; font-family: 'Fraunces', serif !important; font-size: 1.45rem !important; letter-spacing: -.035em; margin: 0 !important; }
 .site-header > nav > div > div:last-child { display: block; width: auto; }
 .site-header > nav ul { align-items: center; display: flex; gap: 28px; margin: 0 !important; padding: 0 !important; }
-.site-header > nav li { list-style: none; }
+.site-header > nav li { list-style: none; margin: 0 !important; }
 .site-header > nav li a { border: 0 !important; color: var(--muted) !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .06em; padding: 6px 0 !important; text-transform: uppercase; }
 .site-header > nav li a:hover, .site-header > nav li a[aria-current='page'] { background: transparent !important; color: var(--coral-dark) !important; }
 .site-header > nav > div > button { display: none !important; }
