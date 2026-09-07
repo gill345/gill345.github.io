@@ -168,6 +168,16 @@ body > header.site-header > nav li { list-style: none; }
 body > header.site-header > nav li a { border: 0 !important; color: var(--muted) !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .06em; padding: 6px 0 !important; text-transform: uppercase; }
 body > header.site-header > nav li a:hover, body > header.site-header > nav li a[aria-current='page'] { background: transparent !important; color: var(--coral-dark) !important; }
 
+.site-header > nav > div { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1180px; min-height: 82px; padding: 0 28px !important; }
+.site-header > nav > div > div:first-child { display: block; }
+.site-header > nav > div > div:first-child h1 { color: var(--ink) !important; font-family: 'Fraunces', serif !important; font-size: 1.45rem !important; letter-spacing: -.035em; margin: 0 !important; }
+.site-header > nav > div > div:last-child { display: block; width: auto; }
+.site-header > nav ul { align-items: center; display: flex; gap: 28px; margin: 0 !important; padding: 0 !important; }
+.site-header > nav li { list-style: none; }
+.site-header > nav li a { border: 0 !important; color: var(--muted) !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .06em; padding: 6px 0 !important; text-transform: uppercase; }
+.site-header > nav li a:hover, .site-header > nav li a[aria-current='page'] { background: transparent !important; color: var(--coral-dark) !important; }
+.site-header > nav > div > button { display: none !important; }
+
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 725px) {
     .site-nav, body > .flex.flex-col > header nav > div { min-height: 70px; padding: 0 20px !important; }
@@ -186,6 +196,10 @@ body > header.site-header > nav li a:hover, body > header.site-header > nav li a
     body > header.site-header > nav > div > button { display: block !important; }
     body > header.site-header > nav ul { gap: 13px; }
     body > header.site-header > nav li a { font-size: .63rem !important; letter-spacing: .03em; }
+    .site-header > nav > div { min-height: 70px; padding: 0 20px !important; }
+    .site-header > nav ul { gap: 13px; }
+    .site-header > nav li a { font-size: .63rem !important; letter-spacing: .03em; }
+    .site-header > nav > div > button { display: block !important; }
     .experience-item { gap: 18px; grid-template-columns: 1fr; padding: 32px 0; }
     .experience-content { padding-left: 20px; }
     body > .flex.flex-col > h1 { padding-left: 20px; padding-right: 20px; }
