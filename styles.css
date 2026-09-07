@@ -162,6 +162,7 @@ body > header.site-header > nav > div { align-items: center; display: flex; just
 body > header.site-header > nav > div > div:first-child { display: block; }
 body > header.site-header > nav > div > div:first-child h1 { color: var(--ink) !important; font-family: 'Fraunces', serif !important; font-size: 1.45rem !important; letter-spacing: -.035em; margin: 0 !important; }
 body > header.site-header > nav > div > div:last-child { display: block; width: auto; }
+body > header.site-header > nav > div > button { display: none !important; }
 body > header.site-header > nav ul { align-items: center; display: flex; gap: 28px; margin: 0 !important; padding: 0 !important; }
 body > header.site-header > nav li { list-style: none; }
 body > header.site-header > nav li a { border: 0 !important; color: var(--muted) !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .06em; padding: 6px 0 !important; text-transform: uppercase; }
@@ -182,6 +183,7 @@ body > header.site-header > nav li a:hover, body > header.site-header > nav li a
     .site-nav > .nav-links a { padding: 10px 0 !important; width: 100%; }
     body > .flex.flex-col > header .site-nav { min-height: 70px; padding: 0 20px; }
     body > header.site-header > nav > div { min-height: 70px; padding: 0 20px !important; }
+    body > header.site-header > nav > div > button { display: block !important; }
     body > header.site-header > nav ul { gap: 13px; }
     body > header.site-header > nav li a { font-size: .63rem !important; letter-spacing: .03em; }
     .experience-item { gap: 18px; grid-template-columns: 1fr; padding: 32px 0; }
